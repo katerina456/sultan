@@ -1,0 +1,76 @@
+.input_box {
+    position: relative;
+    width: 263px;
+    /* margin-left: 15px; */
+}
+
+.small {
+    width: 100px;
+    height: 23px; 
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px; 
+    text-align: center;
+    color: #111111;
+    border: 0;
+    outline: none;
+}
+
+.small::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px; 
+    text-align: center;
+    color: #3F4E65;
+}
+
+.input {
+    background: #EDEDED;
+    border-radius: 36px;
+    padding: 20px;
+    padding-right: 52px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #111111;
+    border: 0;
+    outline: none;
+    width: 263px;
+    height: 59px;
+}
+
+.input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;  
+    color: #5C6370;
+    opacity: 0.6;    
+}
+
+.search_box {
+    width: 39px;
+    height: 39px;
+    background: #FFC85E;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.search_box:hover {
+    background: #cca24e;
+}

@@ -1,0 +1,247 @@
+{
+    "array": [
+      {
+        "cod": "4604049097555",
+        "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+        "url": "images/products/biomio.jpg",
+        "sizeType": "масса",
+        "size": 90,
+        "manufacturer": "BioMio",
+        "brand": "BioMio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "уход за телом",
+          "уход за руками",
+          "уход за ногами",
+          "уход за лицом"
+        ]
+      },
+      {
+        "cod": "4604049097566",
+        "name": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+        "url": "images/products/ariel.jpg",
+        "sizeType": "масса",
+        "size": "15X28.8",
+        "manufacturer": "Нэфис",
+        "brand": "ARIEL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 58.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4604049097577",
+        "name": "Ср-во для мытья посуды Апельсин+мята",
+        "url": "images/products/sorti.jpg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "AOS",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 68.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4604049097588",
+        "name": "Порошок стиральный Автомат 100 пятен COMPACT",
+        "url": "images/products/bimax.jpg",
+        "sizeType": "масса",
+        "size": 1500,
+        "manufacturer": "BIMAX",
+        "brand": "BIMAX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 78.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4604049097599",
+        "name": "средство для мытья посуды Crystal",
+        "url": "images/products/aos.jpg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "AOS",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 85.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4604049097556",
+        "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+        "url": "images/products/johnsons.jpg",
+        "sizeType": "масса",
+        "size": 90,
+        "manufacturer": "Johnsons",
+        "brand": "BioMio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 76.76,
+        "careType": [
+          "уход за телом",
+          "уход за волосами"
+        ]
+      },
+      {
+        "cod": "4606049097566",
+        "name": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+        "url": "images/products/tibetan.jpg",
+        "sizeType": "масса",
+        "size": "15X28.8",
+        "manufacturer": "Tibetan",
+        "brand": "ARIEL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 148.76,
+        "careType": [
+          "уход за руками"
+        ]
+      },
+      {
+        "cod": "4604049097576",
+        "name": "Ср-во для мытья посуды Апельсин+мята",
+        "url": "images/products/aura.jpg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "Aura",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 248.76,
+        "careType": [
+          "уход за руками"
+        ]
+      },
+      {
+        "cod": "4604049097586",
+        "name": "Порошок стиральный Автомат 100 пятен COMPACT",
+        "url": "images/products/handcare.jpg",
+        "sizeType": "масса",
+        "size": 1500,
+        "manufacturer": "Handcare",
+        "brand": "BIMAX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 348.76,
+        "careType": [
+          "уход за руками"
+        ]
+      },
+      {
+        "cod": "4604049097596",
+        "name": "средство для мытья посуды Crystal",
+        "url": "images/products/mif.jpg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "Нэфис",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 18.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4604042297555",
+        "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+        "url": "images/products/vanish.jpg",
+        "sizeType": "масса",
+        "size": 90,
+        "manufacturer": "BioMio",
+        "brand": "Vanish",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 177.76,
+        "careType": [
+          "гигиеническая продукция"
+        ]
+      },
+      {
+        "cod": "4611049097566",
+        "name": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+        "url": "images/products/colgate.jpg",
+        "sizeType": "масса",
+        "size": "15X28.8",
+        "manufacturer": "Нэфис",
+        "brand": "ARIEL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 234.76,
+        "careType": [
+          "гигиена полости рта"
+        ]
+      },
+      {
+        "cod": "4604049012577",
+        "name": "Ср-во для мытья посуды Апельсин+мята",
+        "url": "images/products/rose.jpeg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "Нэфис",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "подарочные наборы"
+        ]
+      },
+      {
+        "cod": "4604049097558",
+        "name": "Порошок стиральный Автомат 100 пятен COMPACT",
+        "url": "images/products/sun.jpg",
+        "sizeType": "масса",
+        "size": 1500,
+        "manufacturer": "Нэфис",
+        "brand": "BIMAX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "уход за телом"
+        ]
+      },
+      {
+        "cod": "4604049045599",
+        "name": "средство для мытья посуды Crystal",
+        "url": "images/products/absolute.jpg",
+        "sizeType": "объем",
+        "size": 450,
+        "manufacturer": "Нэфис",
+        "brand": "AOS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "уход за руками"
+        ]
+      },
+      {
+        "cod": "4604049097765",
+        "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+        "url": "images/products/nivea.jpg",
+        "sizeType": "масса",
+        "size": 90,
+        "manufacturer": "BioMio",
+        "brand": "BioMio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "уход за телом",
+          "уход за руками"
+        ]
+      },
+      {
+        "cod": "4604049097986",
+        "name": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+        "url": "images/products/palmolive.jpg",
+        "sizeType": "масса",
+        "size": "15X28.8",
+        "manufacturer": "Нэфис",
+        "brand": "ARIEL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.",
+        "price": 48.76,
+        "careType": [
+          "уход за телом"
+        ]
+      }
+    ]
+  }
