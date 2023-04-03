@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/sultan/static/css/main.ebae2fa5.css",
+    "main.js": "/sultan/static/js/main.9817117d.js",
+    "static/media/logo.svg": "/sultan/static/media/logo.787b66ae53c72b91732bd24aa716ab17.svg",
+    "static/media/logo-footer.svg": "/sultan/static/media/logo-footer.18600ba6450c54512a99f98a551a8556.svg",
+    "static/media/whatsapp.svg": "/sultan/static/media/whatsapp.7b3ed1d689f4b1d0f6c0a7896eda263a.svg",
+    "static/media/small_basket.svg": "/sultan/static/media/small_basket.e78dffd117de7364cb72e75040f958ce.svg",
+    "static/media/basket.svg": "/sultan/static/media/basket.a5d100d0100f4885c179d9d923ea75eb.svg",
+    "static/media/delete.svg": "/sultan/static/media/delete.52dd0ca00a7578f6d0c562e69a5e8080.svg",
+    "static/media/share.svg": "/sultan/static/media/share.c7ea557134a8977c1abbf2213e507dea.svg",
+    "static/media/close-outline.svg": "/sultan/static/media/close-outline.ba6fc45b1c4861388bc548a5aac3811e.svg",
+    "static/media/mail.svg": "/sultan/static/media/mail.8034b8d0cc942d91e5c46dfbc0065032.svg",
+    "static/media/bottle.svg": "/sultan/static/media/bottle.130f8c5ece94d21d8feb9ef53f35a225.svg",
+    "static/media/box-open.svg": "/sultan/static/media/box-open.980fd11a84a66369e3f2a69d5e649c7c.svg",
+    "static/media/telegram.svg": "/sultan/static/media/telegram.dcb86d5e3c8bccf9788892956ba6f9fe.svg",
+    "static/media/location.svg": "/sultan/static/media/location.ec04586f0556e2f765a6ddeba9adf73c.svg",
+    "static/media/frame.svg": "/sultan/static/media/frame.4756189f8fb2f4cdf0b38c581c7033d8.svg",
+    "index.html": "/sultan/index.html",
+    "static/media/search.svg": "/sultan/static/media/search.246c18fcc20fbd4f2ed32aa1ebfdcde7.svg",
+    "static/media/double-check.svg": "/sultan/static/media/double-check.37f3bc180890ba89fe771c62d8d15901.svg",
+    "static/media/download-black.svg": "/sultan/static/media/download-black.11d3238f37bdb4da06fd293c2ccf77e4.svg",
+    "static/media/download.svg": "/sultan/static/media/download.e7871a54009d32c25a9d6309214fe536.svg",
+    "static/media/crumbs-img.svg": "/sultan/static/media/crumbs-img.20b2dfd57849f6cfcf55fbfba6a3637b.svg",
+    "static/media/enter-email.svg": "/sultan/static/media/enter-email.35ab94e2f8817f324bd31c2293385fa8.svg",
+    "static/media/polygon5.svg": "/sultan/static/media/polygon5.260e242d67fc23d29ab014c3406116d8.svg",
+    "static/media/polygon.svg": "/sultan/static/media/polygon.5e5d30daddeae7614a94f9346edb1e23.svg",
+    "main.ebae2fa5.css.map": "/sultan/static/css/main.ebae2fa5.css.map",
+    "main.9817117d.js.map": "/sultan/static/js/main.9817117d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebae2fa5.css",
+    "static/js/main.9817117d.js"
+  ]
+}
