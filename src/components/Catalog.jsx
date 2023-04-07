@@ -2,9 +2,9 @@ import React from "react";
 import Wrapper from "./Wrapper";
 import InputMy from "./UI/input/InputMy";
 import InputSmall from "./UI/input/InputSmall";
-import ButtonOrange from "./UI/button/ButtonOrange";
-import ButtonRound from "./UI/button/ButtonRound";
 import ProductsItem from "./ProductsItem";
+/* import ButtonOrange from "./UI/button/ButtonOrange";
+import ButtonRound from "./UI/button/ButtonRound"; */
 
 import '../styles/App.css';
 import '../styles/main.css';
@@ -13,7 +13,7 @@ import productsList from "../productsList.json";
 
 import search from './icons/search.svg';
 import polygon from './icons/polygon5.svg';
-import delet from './icons/delete.svg';
+/* import delet from './icons/delete.svg'; */
 
 const Catalog = function(props) {
     const menuArray = ['Уход за телом',
@@ -28,8 +28,6 @@ const Catalog = function(props) {
                         'Гигиена полости рта',
                         'Бумажная продукция'
     ];
-
-    //const products = productsList.array
 
     const [products, setProducts] = React.useState(productsList.array);
 
@@ -52,6 +50,24 @@ const Catalog = function(props) {
         if ( prev.name < next.name ) return -1;
         if ( prev.name < next.name ) return 1;
     })
+
+    const [brandInput, setBrandInput] = React.useState('');
+
+    const handleOnInput = (text) => {
+        setBrandInput(text); 
+    };
+
+    const selecredManufactorerArray = React.useMemo(() => {
+        if (brandInput) {
+            return manufactorerArray.filter(item => {
+                let str = item.name.toLowerCase()
+                return str.includes(brandInput.toLowerCase());
+            })
+        } else {
+            return manufactorerArray  
+        }
+    }, [brandInput])
+
 
     const selectArray = ['по цене по убыванию',
                         'по цене по возрастанию',
@@ -113,8 +129,6 @@ const Catalog = function(props) {
     }
 
 
-
-
     const [searchQuery, setSearchQuery] = React.useState('');
 
     function changeSearchQuery(event, text) {
@@ -139,7 +153,31 @@ const Catalog = function(props) {
 
     }, [searchQuery, products, selectedSort]);
 
+    const [selectedBrand, setSelectedBrand] = React.useState(
+        new Array(selecredManufactorerArray.length).fill(false)
+    );
 
+    const handleOnChange = (position) => {
+        console.log(position)
+        const updatedCheckedState = selectedBrand.map((item, index) =>
+          index === position ? !item : item
+        );
+
+        setSelectedBrand(updatedCheckedState); 
+    };
+
+    const manufacturersForSort = React.useMemo(() => {
+        let array = []
+        selectedBrand.forEach((item, index) => {
+            console.log(item, selecredManufactorerArray[index].name)
+            if (item === true) {
+                array.push(selecredManufactorerArray[index].name)
+            }
+        })
+        return array
+    }, [selectedBrand])
+
+console.log(manufacturersForSort)
 
     const [searchPriceMin, setsearchPriceMin] = React.useState(0)
     const [searchPriceMax, setsearchPriceMax] = React.useState(1000)
@@ -148,13 +186,17 @@ const Catalog = function(props) {
         let obj = sortedProducts.filter(item => {
             return (item.price<searchPriceMax && item.price>searchPriceMin)
         })
+
+        if (manufacturersForSort.length !== 0) {
+            obj = obj.filter(item => {
+                return manufacturersForSort.includes(item.manufacturer);
+            })
+        }
         
         return obj;
 
-    }, [searchPriceMin, searchPriceMax, selectedSort, searchQuery])
+    }, [searchPriceMin, searchPriceMax, selectedSort, searchQuery, manufacturersForSort])
 
-
-    
 
     return (
         <Wrapper>
@@ -170,11 +212,11 @@ const Catalog = function(props) {
                         </div>
                             
                         {select && <div className="option">
-                            {selectArray.map(item => 
+                            {selectArray.map(item =>  
                                 <p className="catalog-header-text" key={item}
                                     onClick={(event) => sortProducts(event)}
                                 >
-                                    {item}
+                                {item}
                                 </p>
                             )}
                         </div>}
@@ -199,12 +241,12 @@ const Catalog = function(props) {
                     <p className="catalig-main-price">Цена <span>₸</span></p>
                     <div className="price-diapasone">
                         <InputSmall placeholder={0} index={0} 
-                            handleChange={(number,index) => {
+                            handleChange={number => {
                                 setsearchPriceMin(number)
                             }} value={searchPriceMin} />
                         <span>-</span>
                         <InputSmall placeholder={10000} index={1} 
-                            handleChange={(number,index) => {
+                            handleChange={number => {
                                 setsearchPriceMax(number)
                             }} value={searchPriceMax} />
                     </div>
@@ -213,17 +255,24 @@ const Catalog = function(props) {
                     <h3 className="catalog-main-item-h3" 
                         style={{textTransform: 'none'}}>Производитель
                     </h3>
-                    <InputMy placeholder='Поиск...' img={search} width='238px' />
+                    <InputMy placeholder='Поиск...' img={search} width='238px' 
+                        handleOnInput={handleOnInput} value={brandInput}
+                    />
+
                     <div className="catalog-checkbox">       
-                        {manufactorerArray.map(item => 
+                        {selecredManufactorerArray.map((item, index) => 
                             <div className="catalog-checkbox-item" key={item.name}>
-                                <input type="checkbox" id={item.name} name="manufacturer"  />
+                                <input type="checkbox" id={item.name} name="manufacturer" 
+                                    value={item.name} checked={selectedBrand[index]} 
+                                    onChange={() => handleOnChange(index)}
+                                />
                                 <label htmlFor={item.name} className="checkbox-label">
                                     {item.name} <span>({item.count})</span>
                                 </label>
                             </div>
-                        )}                 
+                        )}           
                     </div>
+
                     <div className="show-all">
                         <p className="show-all-text">Показать все</p>
                         <img src={polygon} alt="" />

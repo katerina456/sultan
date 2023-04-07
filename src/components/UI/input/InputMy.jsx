@@ -9,6 +9,9 @@ const InputMy = function(props) {
             <input type="text" placeholder={props.placeholder} 
                 className={classes.input} 
                 style={{backgroundColor: props.color, width: props.width}}
+                value={props.text}
+                onInput={(event) => {
+                    if (props.handleOnInput) props.handleOnInput(event.target.value)}}
             />
 
             <div className={classes.search_box}>

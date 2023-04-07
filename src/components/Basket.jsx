@@ -12,8 +12,10 @@ const Basket = function(props) {
     const [layer, setLayer] = React.useState(false);
     
     function getOrder() {  
-        props.clearBasket();
-        setLayer(true);
+        if (props.summ > 0) {
+            props.clearBasket();
+            setLayer(true);
+        }
     }
 
     function closeModal() {

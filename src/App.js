@@ -26,7 +26,6 @@ function App() {
   }
 
   const [basketProducts, setBasketProducts] = React.useState([]);
-  /* const [basketSumm, setBasketSumm] = React.useState(0); */
 
   function addBasketProduct(item) {
     let cod = item.cod;
@@ -39,7 +38,6 @@ function App() {
         return [...prev, item];
       }) 
       /* setBasketSumm(countBasketSumm()) */
-
 
       /* console.log(basketSumm) */
     } else {
