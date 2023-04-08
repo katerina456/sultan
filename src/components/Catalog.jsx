@@ -68,6 +68,12 @@ const Catalog = function(props) {
         }
     }, [brandInput])
 
+    const [limit, setLimit] = React.useState(true);
+
+    function toggleLimit() {
+        setLimit(prev => !prev)
+    }
+
 
     const selectArray = ['по цене по убыванию',
                         'по цене по возрастанию',
@@ -158,7 +164,6 @@ const Catalog = function(props) {
     );
 
     const handleOnChange = (position) => {
-        console.log(position)
         const updatedCheckedState = selectedBrand.map((item, index) =>
           index === position ? !item : item
         );
@@ -169,15 +174,13 @@ const Catalog = function(props) {
     const manufacturersForSort = React.useMemo(() => {
         let array = []
         selectedBrand.forEach((item, index) => {
-            console.log(item, selecredManufactorerArray[index].name)
-            if (item === true) {
+            if (item) {
                 array.push(selecredManufactorerArray[index].name)
             }
         })
         return array
     }, [selectedBrand])
 
-console.log(manufacturersForSort)
 
     const [searchPriceMin, setsearchPriceMin] = React.useState(0)
     const [searchPriceMax, setsearchPriceMax] = React.useState(1000)
@@ -260,8 +263,10 @@ console.log(manufacturersForSort)
                     />
 
                     <div className="catalog-checkbox">       
-                        {selecredManufactorerArray.map((item, index) => 
-                            <div className="catalog-checkbox-item" key={item.name}>
+                        {selecredManufactorerArray.map((item, index) => {
+                            let number = limit ? 4 : selecredManufactorerArray.length;
+                            if (index < number) { 
+                                return (<div className="catalog-checkbox-item" key={item.name}>
                                 <input type="checkbox" id={item.name} name="manufacturer" 
                                     value={item.name} checked={selectedBrand[index]} 
                                     onChange={() => handleOnChange(index)}
@@ -269,12 +274,16 @@ console.log(manufacturersForSort)
                                 <label htmlFor={item.name} className="checkbox-label">
                                     {item.name} <span>({item.count})</span>
                                 </label>
-                            </div>
+                                </div>)
+                            }
+                        }
                         )}           
                     </div>
 
-                    <div className="show-all">
-                        <p className="show-all-text">Показать все</p>
+                    <div className="show-all" onClick={toggleLimit}>
+                        <p className="show-all-text">
+                            {limit? 'Показать все ' : 'Свернуть '}
+                        </p>
                         <img src={polygon} alt="" />
                     </div>
                     

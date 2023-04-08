@@ -37,10 +37,6 @@ function App() {
         console.log(item)
         return [...prev, item];
       }) 
-      /* setBasketSumm(countBasketSumm()) */
-
-      /* console.log(basketSumm) */
-      /*  */
     } else {
       setBasketProducts(basketProducts.filter(prod => prod.cod !== item.cod));
     }
@@ -78,7 +74,6 @@ function rounded (number){
 
   function clearBasket() {
     setBasketProducts([]);
-    /* setBasketSumm(0); */
   }
   
   return (
