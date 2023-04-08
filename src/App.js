@@ -40,6 +40,7 @@ function App() {
       /* setBasketSumm(countBasketSumm()) */
 
       /* console.log(basketSumm) */
+      /*  */
     } else {
       setBasketProducts(basketProducts.filter(prod => prod.cod !== item.cod));
     }
