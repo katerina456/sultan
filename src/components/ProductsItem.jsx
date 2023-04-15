@@ -23,7 +23,7 @@ const ProductsItem = function(props) {
             </div>
 
             <p className="title" onClick={() => {
-                    navigate( `/card${props.info.cod}` )
+                    navigate( `/sultan/card${props.info.cod}` )
                     props.handleClick(props.info)
                 }}>
                 <span>{props.info.brand}</span> {props.info.name}
