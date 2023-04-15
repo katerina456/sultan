@@ -15,6 +15,12 @@ import polygon from './icons/polygon.svg';
 const Card = function(props) {
     let product = props.product;
 
+    let cod = product.cod;
+    let index = props.basketProducts.findIndex(e => e.cod === cod);
+
+    const [number, setNumber] = React.useState(1)
+console.log('test', number)
+
     return (
         <Wrapper>
 
@@ -40,11 +46,18 @@ const Card = function(props) {
                             {String(props.product.price).split('.').join(',')} ₸
                         </p>
 
-                        <Counter />
+                        <Counter apdateBasketElement={props.apdateBasketElement}
+                            cod={props.product.cod}
+                            flag={index === -1 ? true : false}
+                            handleClick={(num) => {
+                                console.log(num)
+                                setNumber(num)}}
+                        />
 
                         <ButtonOrange img={smallBasket} text='В корзину' 
                             handleClick={props.addBasketProduct} 
                             item={props.product}
+                            number={number}
                         />
                     </div>
 

@@ -6,13 +6,28 @@ const Counter = function(props) {
   function increment() {
     let num = quantity + 1
     setQuantity(num)
-    props.apdateBasketElement(props.cod, num)
+
+    if (props.handleClick) {
+      props.handleClick(num)
+    }
+
+    if (!props.flag) {
+       props.apdateBasketElement(props.cod, num) 
+      
+    } 
   }
 
   function decrement() {
     let num = quantity -1 < 1 ? 1 : quantity -1;
     setQuantity(num)  
-    props.apdateBasketElement(props.cod, num)
+
+    if (props.handleClick) {
+      props.handleClick(num)
+    }
+
+    if (!props.flag) {
+      props.apdateBasketElement(props.cod, num)
+    }
   }
 
   return (

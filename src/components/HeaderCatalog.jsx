@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ButtonOrange from "./UI/button/ButtonOrange";
 import Phone from "./Phone";
 import BasketButton from "./BasketButton";
@@ -12,6 +14,7 @@ import search from './icons/search.svg';
 const HeaderCatalog = function(props) {
     
     return (
+        
         <div className="container header">
             <div>
                 <img src={logo} alt="" />
@@ -34,11 +37,15 @@ const HeaderCatalog = function(props) {
             
             <ButtonOrange img={download} text={'Прайс-лист'} />
             
-            <BasketButton handleClick={props.handleClick} number={props.number} 
+            {/* <BasketButton handleClick={props.handleClick} number={props.number} 
                 summ={props.summ}
-            />
+            /> */}
             
+            <Link to="/basket">
+                <BasketButton  number={props.number} summ={props.summ} />
+            </Link>
         </div>
+        
     )
 }
 

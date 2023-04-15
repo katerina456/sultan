@@ -20,7 +20,7 @@ const Header = function(props) {
             
             <hr className="line"/>
 
-            <HeaderCatalog handleClick={props.handleClick} number={props.number} 
+            <HeaderCatalog /* handleClick={props.handleClick} */ number={props.number} 
                 summ={props.summ} 
             />
 

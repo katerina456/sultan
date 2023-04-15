@@ -7,7 +7,7 @@ const ButtonOrange = function(props) {
             style={{width: props.width}}
             /* onClick={props.handleClick} */
             onClick={() => {
-                if (props.handleClick) props.handleClick(props.item)}}
+                if (props.handleClick) props.handleClick(props.item, props.number)}}
         >
             {props.text}
             {props.img && <img src={props.img} alt="" />}

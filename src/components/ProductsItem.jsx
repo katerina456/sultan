@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import ButtonSmall from "./UI/button/ButtonSmall";
 import Container from "./Container";
 
@@ -7,6 +9,8 @@ import smallBasket from './icons/small_basket.svg';
 /* 'url("images/image4.jpg")' */
 
 const ProductsItem = function(props) {
+    let navigate = useNavigate();
+    
 
     return (
         <div className="products-item" >
@@ -17,10 +21,14 @@ const ProductsItem = function(props) {
                             size={props.info.size} 
                 />
             </div>
-                    
-            <p className="title" onClick={() =>props.handleClick(props.info)}>
+
+            <p className="title" onClick={() => {
+                    navigate( `/card${props.info.cod}` )
+                    props.handleClick(props.info)
+                }}>
                 <span>{props.info.brand}</span> {props.info.name}
             </p>
+            
             <p className="about">Штрихкод: <span>{props.info.cod}</span></p>
             <p className="about">Производитель: <span>{props.info.manufacturer}</span></p>
             <p className="about">Бренд: <span>{props.info.brand}</span></p>
