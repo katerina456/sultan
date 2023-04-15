@@ -41,7 +41,7 @@ const HeaderCatalog = function(props) {
                 summ={props.summ}
             /> */}
             
-            <Link to="/basket">
+            <Link to="/sultan/basket">
                 <BasketButton  number={props.number} summ={props.summ} />
             </Link>
         </div>

@@ -111,18 +111,18 @@ function rounded (number){
       />} */}
 
           <Routes >
-            <Route exact path="/" element={
+            <Route exact path="/sultan/" element={
               <Catalog handleClick={openCard} addBasketProduct={addBasketProduct}  />} 
             />
 
-            <Route exact path={"/card" + product.cod} element={
+            <Route exact path={"/sultan/card" + product.cod} element={
               <Card product={product} addBasketProduct={addBasketProduct}  
                 apdateBasketElement={apdateBasketElement}
                 basketProducts={basketProducts} 
               />
             } />
 
-            <Route exact path="/basket" element={
+            <Route exact path="/sultan/basket" element={
               <Basket products={basketProducts} 
                 clearBasket={clearBasket} 
                 addBasketProduct={addBasketProduct}
