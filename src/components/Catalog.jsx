@@ -202,7 +202,7 @@ const Catalog = function(props) {
 
 
     return (
-        <Wrapper>
+        <Wrapper flag={true}>
             <div className="catalog-header">
                 <h2 className="catalog-title">Косметика и гигиена</h2>
                 <div className="catalog-sort">

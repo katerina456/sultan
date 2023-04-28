@@ -1,11 +1,22 @@
 import React from "react";
-import Crumbs from "./Crumbs";
+import { Link } from "react-router-dom";
 
-const Wrapper = function({children}) {
+import Crumbs from "./Crumbs";
+import ButtonBack from "./UI/button/ButtonBack";
+
+const Wrapper = function({children, flag}) {
 
     return (
         <main className="container wrapper">
-            <Crumbs />
+            {/* <Crumbs /> */}
+
+            {!flag && <div style={{textAlign: '-webkit-right', marginBottom: '50px'}}>
+                            <Link to="/sultan">
+                                <ButtonBack text='В каталог' />
+                            </Link>
+                        </div>
+            }
+            
             {children}
         </main> 
     )
