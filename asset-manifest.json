@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sultan/static/css/main.ebae2fa5.css",
-    "main.js": "/sultan/static/js/main.afce1d6c.js",
+    "main.js": "/sultan/static/js/main.959d471c.js",
     "static/media/logo.svg": "/sultan/static/media/logo.787b66ae53c72b91732bd24aa716ab17.svg",
     "static/media/logo-footer.svg": "/sultan/static/media/logo-footer.18600ba6450c54512a99f98a551a8556.svg",
     "static/media/whatsapp.svg": "/sultan/static/media/whatsapp.7b3ed1d689f4b1d0f6c0a7896eda263a.svg",
@@ -26,10 +26,10 @@
     "static/media/polygon5.svg": "/sultan/static/media/polygon5.260e242d67fc23d29ab014c3406116d8.svg",
     "static/media/polygon.svg": "/sultan/static/media/polygon.5e5d30daddeae7614a94f9346edb1e23.svg",
     "main.ebae2fa5.css.map": "/sultan/static/css/main.ebae2fa5.css.map",
-    "main.afce1d6c.js.map": "/sultan/static/js/main.afce1d6c.js.map"
+    "main.959d471c.js.map": "/sultan/static/js/main.959d471c.js.map"
   },
   "entrypoints": [
     "static/css/main.ebae2fa5.css",
-    "static/js/main.afce1d6c.js"
+    "static/js/main.959d471c.js"
   ]
 }
